@@ -1,0 +1,51 @@
+reflex_explorer:
+  ros__parameters:
+    use_sim_time: true
+
+    # Frames
+    global_frame: map
+    robot_base_frame: base_link
+
+    # Frontier & info-gain
+    sensor_range: 3.8
+    min_frontier_cells: 6
+    min_info_gain_cells: 2
+
+    # Map handling & candidate maintenance
+    edge_ignore_margin_m: 0.10
+    dedupe_radius_m: 0.5
+    refresh_period_sec: 0.5
+
+    # Retries / attempts
+    retry_cooldown_sec: 2.0
+    max_attempts_per_goal: 5
+    cancel_cooldown_sec: 1.2
+
+    # Progress watchdog
+    min_goal_runtime_sec: 4.0
+    progress_timeout_sec: 8.0
+    progress_dist_thresh_m: 0.05
+
+    # Finish criteria
+    min_unknown_ratio: 0.015
+
+    # Local exemptions / loop avoidance
+    near_goal_epsilon_m: 0.35
+    visited_suppress_radius_m: 0.8
+    visited_suppress_sec: 30.0
+
+    # Plateau-of-progress (enable only when map is mostly explored)
+    plateau_enable_unknown_ratio: 0.25
+    plateau_sample_sec: 5.0
+    plateau_window_sec: 90.0
+    plateau_min_improve: 0.02
+    plateau_warmup_sec: 12.0
+    plateau_transit_dist_m: 2.0
+    plateau_autoscale_window: true
+    plateau_min_window_sec: 60.0
+    plateau_max_window_sec: 180.0
+    plan_speed_guess_mps: 0.25
+
+    # Map saving
+    save_when_done: true
+    map_save_path: ""   # empty => code will create package/share/.../maps/<timestamp>/map

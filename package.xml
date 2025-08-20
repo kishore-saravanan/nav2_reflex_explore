@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>nav2_reflex_explore</name>
+  <version>0.1.0</version>
+  <description>Simple frontier-based exploration for Nav2 with nearest-first and robust goal suppression.</description>
+
+  <maintainer email="kishoresaravanan2002@gmail.com">Kishore Saravanan</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>ament_index_cpp</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
