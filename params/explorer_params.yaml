@@ -48,4 +48,3 @@ reflex_explorer:
 
     # Map saving
     save_when_done: true
-    map_save_path: ""   # empty => code will create package/share/.../maps/<timestamp>/map
