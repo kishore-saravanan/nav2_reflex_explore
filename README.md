@@ -176,23 +176,24 @@ A tuned example YAML is located at **`params/explorer_params.yaml`**.
 ## Example runs (GIFs)
 
 - **TurtleBot3 DQN Stage 4:**  
-  ![DQN 4 run](docs/gifs/apartment.gif)
+<video controls muted playsinline width="100%">
+  <source src="docs/demo_videos/dqn_4.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 - **TurtleBot3 DQN Stage 3:**  
-  ![DQN 3 run](docs/gifs/warehouse.gif)
+<video controls muted playsinline width="100%">
+  <source src="docs/demo_videos/dqn_3.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 - **TurtleBot3 DQN Stage 1:**  
-  ![DQN 1 run](docs/gifs/lab.gif)
+<video controls muted playsinline width="100%">
+  <source src="docs/demo_videos/dqn_1.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 ---
-
-## Benchmarks (how to measure)
-
-Evaluate with:
-- **Coverage vs. time:** fraction of unknown cells declining over time (record `/map` and compute offline).  
-- **Re-issued goals:** REFLEX should keep this near zero.  
-- **Exploration time** to a given unknown threshold (e.g., 5%).  
-- **Path length (optional):** accumulate odometry or use Nav2 feedback.
 
 **Record:**
 ```bash
