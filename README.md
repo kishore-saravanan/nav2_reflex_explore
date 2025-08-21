@@ -1,6 +1,6 @@
 ## REFLEX Explorer — Reactive Frontier Exploration with Local Exemptions
 
-**REFLEX Explorer** is a lightweight **ROS 2** node that drives autonomous map exploration on **Nav2** by selecting frontier-adjacent goals using a **reactive, nearest-first** policy with **local exemptions** to avoid loops and thrashing. It’s designed to be practical, debuggable, and drop-in for small indoor robots (e.g., **TurtleBot3**) and Gazebo sims.
+**REFLEX Explorer** is a lightweight **ROS 2** node that drives autonomous map exploration on **Nav2** by selecting frontier-adjacent goals using a **reactive, nearest-first** policy with **local exemptions** to avoid loops and thrashing. It’s designed to be practical, debuggable, and drop-in for small to medium size indoor robots (e.g., **TurtleBot3**).
 
 - **ROS 2:** Humble (tested)  
 - **Packages:** `nav2_reflex_explore` (this repo), Nav2 stack running separately  
@@ -185,13 +185,6 @@ A tuned example YAML is located at **`params/explorer_params.yaml`**.
   <source src="docs/demo_videos/dqn_1.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-
----
-
-**Record:**
-```bash
-ros2 bag record   /map /tf /tf_static /odom /amcl_pose /cmd_vel /goal_pose   /navigate_to_pose/_action/feedback
-```
 
 ---
 
