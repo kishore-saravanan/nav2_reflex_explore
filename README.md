@@ -1,8 +1,6 @@
-# REFLEX Explorer — Reactive Frontier Exploration with Local Exemptions
+## REFLEX Explorer — Reactive Frontier Exploration with Local Exemptions
 
 **REFLEX Explorer** is a lightweight **ROS 2** node that drives autonomous map exploration on **Nav2** by selecting frontier-adjacent goals using a **reactive, nearest-first** policy with **local exemptions** to avoid loops and thrashing. It’s designed to be practical, debuggable, and drop-in for small indoor robots (e.g., **TurtleBot3**) and Gazebo sims.
-
-> **REFLEX = Reactive Frontier Exploration with Local Exemptions**
 
 - **ROS 2:** Humble (tested)  
 - **Packages:** `nav2_reflex_explore` (this repo), Nav2 stack running separately  
@@ -104,12 +102,9 @@ ros2 launch nav2_reflex_explore explore.launch.py   params_file:=<your_ws>/src/n
 ---
 
 ## Launcher
-
-REFLEX ships a single launch file: **`explore.launch.py`**.
-
 **Usage**
 ```bash
-ros2 launch nav2_reflex_explore explore.launch.py   params_file:=/absolute/or/workspace/path/to/explorer_params.yaml   map_save_path:=/absolute/path/prefix   # optional
+ros2 launch nav2_reflex_explore reflex_explore.launch.py   params_file:=/absolute/or/workspace/path/to/explorer_params.yaml   map_save_path:=/absolute/path/prefix   # optional
 ```
 
 **Arguments**
@@ -121,8 +116,6 @@ ros2 launch nav2_reflex_explore explore.launch.py   params_file:=/absolute/or/wo
 ---
 
 ## Parameters
-
-> All parameters live under the node key `reflex_explorer`
 
 | Name | Type | Default | Notes |
 |---|---|---|---|
