@@ -166,7 +166,7 @@ A tuned example YAML is located at **`params/explorer_params.yaml`**.
 
 ---
 
-## Example runs (GIFs)
+## Example runs
 
 - **TurtleBot3 DQN Stage 4:**  
 <video controls muted playsinline width="100%">
