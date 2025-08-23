@@ -7,6 +7,8 @@
 - **Action client:** `/navigate_to_pose`  
 - **Subs:** `/map` (`nav_msgs/OccupancyGrid`), `/cmd_vel` (for progress heuristics)
 
+![TB3 DQN Demo](docs/gifs/tb3_dqn4.gif)
+
 ---
 
 ## Why another explorer?
@@ -169,22 +171,13 @@ A tuned example YAML is located at **`params/explorer_params.yaml`**.
 ## Example runs
 
 - **TurtleBot3 DQN Stage 4:**  
-<video controls muted playsinline width="100%">
-  <source src="docs/demo_videos/dqn_4.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+[![Watch on YouTube](https://img.youtube.com/vi/Rj_86SqVt9Q/hqdefault.jpg)](https://www.youtube.com/watch?v=Rj_86SqVt9Q "Click to watch")
 
 - **TurtleBot3 DQN Stage 3:**  
-<video controls muted playsinline width="100%">
-  <source src="docs/demo_videos/dqn_3.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+[![Watch on YouTube](https://img.youtube.com/vi/SIms-SYgOpg/hqdefault.jpg)](https://www.youtube.com/watch?v=SIms-SYgOpg "Click to watch")
 
 - **TurtleBot3 DQN Stage 1:**  
-<video controls muted playsinline width="100%">
-  <source src="docs/demo_videos/dqn_1.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+[![Watch on YouTube](https://img.youtube.com/vi/h6Z1QZj65Ko/hqdefault.jpg)](https://www.youtube.com/watch?v=h6Z1QZj65Ko "Click to watch")
 
 ---
 
